@@ -58,9 +58,9 @@ Contributions are welcome! Feel free to open issues or submit a pull request.
 ### **👥 Team Members**  
 This project was built with the efforts of:  
 - **Rudra Jadhav** – Role (Backend Developer) rudrajad2005@gmail.com
-- **Om Makwana** – Role (Frontend Developer)
-- **Jetra Kandoi** - Role (Frontend Developer)
-- **Heet Patel** – Role (Frontend Developer)
+- **Om Makwana** – Role (Frontend Developer) Omkmakwana21@gmail.com
+- **Jetra Kandoi** - Role (Frontend Developer) jetrakrunalkandoi@gmail.com
+- **Heet Patel** – Role (Frontend Developer) heetpatel081206@gmail.com
 
 
 # **💻 How to Contribute**
