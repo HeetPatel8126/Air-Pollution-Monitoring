@@ -61,3 +61,42 @@ This project was built with the efforts of:
 - **Om Makwana** – Role (Frontend Developer)
 - **Jetra Kandoi** - Role (Frontend Developer)
 - **Heet Patel** – Role (Frontend Developer)
+
+
+# **💻 How to Contribute**
+If you want to contribute to this project, follow these steps:
+
+### **1️⃣ Fork the Repository**
+Click the Fork button on GitHub to create a copy of this repository in your account.
+
+### **2️⃣ Clone the Repository**
+```sh
+git clone https://github.com/RudraJad2005/Air-Pollution-Monitoring.git
+cd air_pollution_monitoring
+```
+
+### **3️⃣ Create a New Branch**
+```sh
+git checkout -b feature-branch-name
+
+For example:
+
+If you're adding a login feature, you might name it add-login-feature.
+If you're fixing a bug, you could name it fix-homepage-bug.
+
+git checkout -b add-login-feature <----#This is just and example
+```
+
+### **4️⃣ Make Changes & Commit**
+After making your changes, commit them:
+
+```sh
+git add .
+git commit -m "What changes you did"
+```
+
+### **5️⃣ Push Changes**
+
+```sh
+git push origin feature-branch-name
+```
