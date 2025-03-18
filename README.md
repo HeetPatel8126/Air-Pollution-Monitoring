@@ -91,6 +91,7 @@ git checkout -b add-login-feature <----#This is just and example
 After making your changes, commit them:
 
 ```sh
+git init
 git add .
 git commit -m "What changes you did"
 ```
