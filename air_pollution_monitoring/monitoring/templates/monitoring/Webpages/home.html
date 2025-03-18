@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAI - Air Quality Solutions</title>
+    <link rel="stylesheet" href="{% static 'Styling/home.css' %}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <h2 style="color: var(--primary-green); font-weight: bold;">EcoAI</h2>
+        <div class="nav-links">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="#solutions">Solutions</a>
+            <a href="{% url 'live_data' %}">Live Data</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <img src="{% static 'images/Keep-the-Environment-Clean-7.webp' %}" alt="Air Quality Background">
+        <div class="hero-content">
+            <h1>Smart Air Quality Management</h1>
+            <p>AI-powered solutions for real-time pollution monitoring and sustainable mitigation strategies.</p>
+            <button class="cta-button">Explore Solutions</button>
+        </div>
+    </section>
+
+    <!-- Live Data Section -->
+    <section class="data-section" id="data">
+        <h2>Real-Time Air Quality Index</h2>
+        <div class="sensor-grid">
+            <div class="sensor-card">
+                <h3>PM2.5</h3>
+                <p id="pm25">Loading...</p>
+            </div>
+            <div class="sensor-card">
+                <h3>NO₂</h3>
+                <p id="no2">Loading...</p>
+            </div>
+            <div class="sensor-card">
+                <h3>O₃</h3>
+                <p id="o3">Loading...</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript - Simulated real-time data
+        function updateSensorData() {
+            document.getElementById('pm25').textContent = 
+                Math.floor(Math.random() * 150) + ' µg/m³';
+            document.getElementById('no2').textContent = 
+                (Math.random() * 0.5).toFixed(2) + ' ppm';
+            document.getElementById('o3').textContent = 
+                (Math.random() * 0.3).toFixed(2) + ' ppm';
+        }
+
+        setInterval(updateSensorData, 5000);
+        updateSensorData();
+    </script>
+</body>
+</html>

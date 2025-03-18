@@ -1,0 +1,127 @@
+:root {
+    --primary-green: #2ECC71;
+    --dark-bg: #1A1A1A;
+    --pure-white: #FFFFFF;
+    --card-bg: rgba(255, 255, 255, 0.1);
+    --accent-blue: #3498db;
+    --red: #E74C3C;
+    --orange: #F39C12;
+    --table-header: rgba(255, 255, 255, 0.2);
+    --table-hover: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+} 
+
+body {
+    background: var(--dark-bg);
+    color: var(--pure-white);
+    text-align: center;
+    padding-top: 80px;
+    padding-left: 2rem;
+    padding-right: 2rem; 
+}
+
+.nav-container {
+    background: rgba(18, 18, 18, 0.95);
+    padding: 1.5rem 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+
+.nav-links a {
+    color: var(--pure-white);
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: var(--accent-blue);
+    transform: scale(1.1);
+}
+
+h1{
+    margin-top: 8vh;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    padding: 2rem;
+    padding-top: 15vh;
+}
+
+.sensor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.sensor-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.sensor-card:hover {
+    transform: translateY(-10px);
+}
+
+.chart-container {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 2rem;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    text-align: left;
+    margin-top: 10vh;
+}
+
+.aqi-table {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10vh;
+}
+
+.aqi-table th, .aqi-table td {
+    padding: 1rem;
+    text-align: left;
+}
+
+.aqi-table thead {
+    background: var(--table-header);
+}
+
+.aqi-table tbody tr:nth-child(even) {
+    background: var(--table-hover);
+}
+
+.aqi-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.aqi-good { color: var(--primary-green); font-weight: bold; }
+.aqi-moderate { color: var(--orange); font-weight: bold; }
+.aqi-unhealthy { color: var(--red); font-weight: bold; }
